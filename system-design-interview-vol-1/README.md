@@ -25,9 +25,32 @@
 5. 정답 발표 후 담당자는 심화 문제를 제출하고 다 같이 이야기해본다.
 ```
 
-### 2025-04-10
+### 2025-04-10 (Cont. Chapter 04)
+- 각자 읽은 내용에 대한 소감 공유
+- 공유받은 스터디 방식을 바로 진행하기에는 무리가 있을 거라고 판단
+- 책의 내용을 빨리 읽기보다는 내용을 최대로 소화한다는 생각을 기반으로
+  1. 각자 추가적으로 학습해보고 싶은 목록을 공유
+  2. 다음 스터디 시간까지 전부 다 진행할 필요 없음. 주어진 시간에 소화 가능한 만큼만
+  3. 진행한 내용만큼만 공유. 
+  4. "이제 다음 챕터로 넘어가도 되겠다" 싶을 때까지 반복
+ 
+#### TODOs
+- 공통
+  - [Active-Active for Multi-Regional Resiliency](https://netflixtechblog.com/active-active-for-multi-regional-resiliency-c47719f6685b) 읽고 정리
+  - [What the heck are you actually using NoSQL for?](https://highscalability.com/what-the-heck-are-you-actually-using-nosql-for/) 읽고 정리
+- dwywdo
+  - Lua Script와 Redis 실제 용례 (회사 코드 베이스로 동작 원리 파악 및 개선 포인트 생각해보기)
+  - 내가 원하는 처리율 알고리즘을 Redis에서 선택할 수 있는지?
+  - 각 처리율 알고리즘에 대한 적절한 사례 생각해보기
+  - 실제 PoC 코드 같은 것도 작성해보면 좋을 것 같다 (순전히 선택사항)
+- hwibaski
+  - Lua Script 살펴보기
+  - Redis Sorted Set 정리
+  - AWS API Gateway에서 Rate Limiting 기능을 제공하는지 + 제공한다면 설정 방법
+  - AWS 혹은 AWS가 아니더라도 Rate Limiting 기능을 위한 별도의 서비스가 있는지 조사
 
-### TBD
+### 2025-04-17 (Cont. Chapter 04)
+
 #### 5. 안정 해시 설계
 
 #### 6. 키-값 저장소 설계
