@@ -1,0 +1,11 @@
+member,score,increment
+user1,100,10
+user2,200,20
+user3,300,-30
+user4,400,40
+user5,500,-50
+user6,600,60
+user7,700,-70
+user8,800,80
+user9,900,-90
+user10,1000,100

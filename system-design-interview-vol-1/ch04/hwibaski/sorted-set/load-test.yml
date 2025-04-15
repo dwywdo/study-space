@@ -1,0 +1,35 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60 # 60초 동안
+      arrivalRate: 5 # 초당 5명의 새로운 가상 사용자 생성
+      rampTo: 50 # 60초 동안 점진적으로 초당 50명까지 증가
+  payload:
+    path: "users.csv" # 테스트 데이터 파일
+    fields:
+      - "member"
+      - "score"
+      - "increment"
+
+scenarios:
+  - name: "Redis Sorted Set 부하 테스트"
+    flow:
+      # 1초 대기
+      - think: 1
+
+      # Score 직접 설정 테스트
+      - post:
+          url: "/update-score"
+          form:
+            member: "{{ member }}"
+            score: "{{ score }}"
+
+      # 1초 대기
+      - think: 1
+
+      # Score 증가/감소 테스트
+      - post:
+          url: "/increment-score"
+          form:
+            member: "{{ member }}"
+            increment: "{{ increment }}"
