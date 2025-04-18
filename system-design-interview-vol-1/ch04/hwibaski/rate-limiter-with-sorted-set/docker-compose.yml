@@ -1,0 +1,83 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-app-rate-limiter
+    ports:
+      - "3000:3000"
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - app-net
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis-rate-limiter
+    ports:
+      - "6379:6379"
+    networks:
+      - app-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+networks:
+  app-net:
+    driver: bridge
+# `docker-compose.yml`의 `networks` 섹션은 Docker 컨테이너 간의 네트워크 통신을 설정하는 부분입니다.
+
+# 현재 설정을 보면:
+
+# ```yaml
+# networks:
+#   app-net:
+#     driver: bridge
+# ```
+
+# 이 설정의 의미를 설명드리면:
+
+# 1. **네트워크의 필요성**:
+#    - Node.js 앱(app)과 Redis 서버(redis)가 서로 통신해야 함
+#    - 각각 별도의 컨테이너에서 실행되므로 네트워크 연결이 필요
+
+# 2. **app-net 네트워크**:
+#    - 사용자 정의 네트워크의 이름
+#    - 두 서비스(app, redis)가 이 네트워크에 연결됨
+#    ```yaml
+#    services:
+#      app:
+#        networks:
+#          - app-net
+#      redis:
+#        networks:
+#          - app-net
+#    ```
+
+# 3. **bridge 드라이버**:
+#    - Docker의 기본 네트워크 드라이버
+#    - 같은 호스트 내의 컨테이너 간 통신을 가능하게 함
+#    - 각 컨테이너에 고유한 IP 주소 할당
+
+# 4. **통신 방식**:
+#    - Node.js 앱에서 `redis://redis:6379`로 Redis에 접속 가능
+#    - `redis`라는 호스트명은 Docker의 내장 DNS가 자동으로 해석
+#    - 컨테이너 간 격리된 안전한 통신 환경 제공
+
+# 이러한 네트워크 설정 덕분에:
+# - 컨테이너 간 안전한 통신 가능
+# - 외부와 격리된 네트워크 환경
+# - 서비스 이름으로 컨테이너 접근 가능 (예: `redis://redis:6379`)
+# - 각 서비스의 독립성과 확장성 보장
+
+# 만약 이 네트워크 설정이 없다면:
+# - 컨테이너 간 통신이 불가능
+# - Redis 연결이 실패
+# - 애플리케이션이 정상적으로 동작하지 않음

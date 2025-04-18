@@ -1,0 +1,23 @@
+{
+  "name": "rate-limiter-with-sorted-set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "microtime": "^3.1.1",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/microtime": "^2.1.2",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
