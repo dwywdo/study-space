@@ -56,10 +56,16 @@ SKIP
 끗.
 
 ### 2025-05-01 (Chapter 05)
-- Chapter 05 읽어오기 :)
+Chapter 05 읽어오기 :)
 
 #### TODOs
-- 생기면 마음껏 추가하기 :)
+생기면 마음껏 추가하기 :)
+- 공통
+  - (placeholder) 
+- dwywdo
+  - (placeholder)
+- hwibaski
+  - (placeholder)
 
 #### 5. 안정 해시 설계
 
