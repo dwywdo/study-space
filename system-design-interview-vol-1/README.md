@@ -60,10 +60,18 @@ Chapter 05 읽어오기 :)
 
 #### TODOs
 생기면 마음껏 추가하기 :)
+
 - 공통
-  - (placeholder) 
-- dwywdo
   - (placeholder)
+- dwywdo
+  - 읽기
+    - https://blog.discord.com/scaling-elixir-f9b8ele7c296
+    - https://theory.stanford.edu/~tim/s16/l/l1.pdf
+  - Java에서 Consistent Hashing을 구현하는 데에 TreeMap 사용
+    - TreeMap의 기반: Red-Black Tree
+  - BST / AVL Tree / Red-Black Tree 간단히 복습
+  - B Tree 계열 볼만한 자료
+    - https://www.youtube.com/watch?v=liPSnc6Wzfk
 - hwibaski
   - (placeholder)
 
