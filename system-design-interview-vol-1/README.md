@@ -54,13 +54,8 @@ SKIP
 
 ### 2025-04-24 (Fin. Chapter 04)
 끗.
-
-### 2025-05-01 (Chapter 05)
 Chapter 05 읽어오기 :)
-
 #### TODOs
-생기면 마음껏 추가하기 :)
-
 - 공통
   - (placeholder)
 - dwywdo
@@ -73,9 +68,20 @@ Chapter 05 읽어오기 :)
   - B Tree 계열 볼만한 자료
     - https://www.youtube.com/watch?v=liPSnc6Wzfk
 - hwibaski
-  - (placeholder)
+  - 이런게 있구나 하는 정도로만 참고자료 읽어봄 (Cassandra 관련 참고자료)
 
-#### 5. 안정 해시 설계
+### 2025-05-01 (Chapter 05)
+특별히 더 파볼 부분은 없을 듯. 안정 해시에 대한 개념만 잡고 다음 챕터 읽어오기!
+Chapter 06 읽어오기 :)
+
+### 2025-05-08 (Chapter 06)
+#### TODOs
+- 공통
+  - (placeholder)
+- dwywdo
+  - (placeholder)
+- hwibaski
+  - (placeholder)
 
 #### 6. 키-값 저장소 설계
 
