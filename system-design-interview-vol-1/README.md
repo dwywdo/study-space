@@ -75,17 +75,39 @@ Chapter 05 읽어오기 :)
 Chapter 06 읽어오기 :)
 
 ### 2025-05-08 (Chapter 06)
-#### TODOs
-- 공통
-  - (placeholder)
-- dwywdo
-  - (placeholder)
-- hwibaski
-  - (placeholder)
+SKIP
 
-#### 6. 키-값 저장소 설계
+### 2025-05-15
+Chapter 06 > 책을 읽어본다... 이외에 큰 의미는 없었음
+
+### 2025-05-22
+SKIP
+
+### 2025-05-29
+Chatper 07 > 마찬가지. 스터디 방식 변경에 대한 이야기
+1. 주마다 번갈아가면서 세션 담당은 챕터 읽고 문제 내기 / 설명 준비하고, 남은 사람은 주제와 관련되어 학습하고 모의 면접 진행
+2. 공통의 문제를 선정하고 각자 설계해본 내용 (+ 생각의 흐름 포함) 공유하기
+
+2번 방식으로 진행하기로 함
+#### 대표적인 시스템 설계 면접 문제 사이트
+
+| 사이트명 | 특징 및 제공 내용 |
+| :-- | :-- |
+| [System Design Primer (GitHub)](https://github.com/donnemartin/system-design-primer) | 가장 유명한 오픈소스 시스템 설계 학습 자료. 다양한 실전 면접 문제(예: URL Shortener, 채팅 시스템, 뉴스피드 등)와 단계별 설계 가이드, 해설, 다이어그램 제공. 실제 면접 준비에 매우 유용함. |
+| [I Got An Offer](https://igotanoffer.com/blogs/tech/system-design-interviews) | FAANG 등 빅테크 기업에서 자주 출제되는 시스템 설계 면접 문제와 답변 예시, 설계 다이어그램, 토픽별 해설을 제공. 예시: 소셜미디어, URL 단축, 채팅 시스템, 뉴스피드 등. |
+| [Awesome System Design Resources (GitHub)](https://github.com/ashishps1/awesome-system-design-resources) | 난이도별(쉬움/중간/어려움)로 다양한 시스템 설계 문제(예: WhatsApp, Instagram, Uber, Google Docs 등)와 관련 학습 자료를 큐레이션. |
+| [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | FAANG 출신 엔지니어들이 만든 시스템 설계 면접 문제와 핵심 개념 요약, 실전 문제 예시(예: Slack, Uber, Rate Limiter 등) 제공. |
+| [ByteByteGo](https://bytebytego.com/?fpr=javarevisited) | 실전 면접 문제와 영상 해설, 설계 다이어그램, 개념 정리 등 다양한 자료를 유료/무료로 제공. |
+| [Exponent](https://www.tryexponent.com/questions?type=system-design&src=nav) | 실전 면접 문제와 영상 해설, 설계 다이어그램, 개념 정리 등 다양한 자료를 유료/무료로 제공. Practice 세션 생성 가능 |
+
+#### 그 외 링크
+- [35 Essential System Design Interview Questions](https://roshancloudarchitect.me/35-essential-system-design-interview-questions-a1b99a153ce7)
+- [Top 25 System Design Interview Questions for 2025](https://dev.to/somadevtoo/top-50-system-design-interview-questions-for-2024-5dbk)
+- [강의 - Grokking the Modern System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
+- [강의 - Design Guru](https://www.designgurus.io/courses)
 
 #### 7. 분산 시스템을 위한 유일 ID 생성기 설계
+<img src="https://github.com/user-attachments/assets/f7d89ed0-308b-4188-bad2-31b45c23c6dc" width="500" height="500"/>
 
 #### 8. URL 단축기 설계
 
