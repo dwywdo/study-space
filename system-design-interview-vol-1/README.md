@@ -106,10 +106,8 @@ Chatper 07 > 마찬가지. 스터디 방식 변경에 대한 이야기
 - [강의 - Grokking the Modern System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview)
 - [강의 - Design Guru](https://www.designgurus.io/courses)
 
-#### 7. 분산 시스템을 위한 유일 ID 생성기 설계
-<img src="https://github.com/user-attachments/assets/f7d89ed0-308b-4188-bad2-31b45c23c6dc" width="500" height="500"/>
-
 #### 8. URL 단축기 설계
+<img src="https://github.com/user-attachments/assets/f7d89ed0-308b-4188-bad2-31b45c23c6dc" width="500" height="500"/>
 
 #### 9. 웹 크롤러 설계
 
